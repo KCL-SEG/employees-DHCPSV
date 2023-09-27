@@ -37,16 +37,16 @@ class Employee:
             if self.commission_type == "no":
                 return self.name + " works on a " + self.salary_type + " salary of " + str(self.salary) + ". " + "Their total pay is " + str(self.get_pay()) + "."
             elif self.commission_type == "fixed":
-                return self.name + " works on a " + self.salary_type + " salary of " + str(self.salary) + " and recieves a bonus commission of " + str(self.commission) + ". "  + "Their total pay is " + str(self.get_pay()) + "."
+                return self.name + " works on a " + self.salary_type + " salary of " + str(self.salary) + " and receives a bonus commission of " + str(self.commission) + ". "  + "Their total pay is " + str(self.get_pay()) + "."
             elif self.commission_type == 'flexible':
-                return self.name + " works on a " + self.salary_type + " salary of " + str(self.salary) + " and recieves a commission for " + str(self.contract_number) + " contract(s) at " + str(self.commission) + "/contract" + ". "  + "Their total pay is " + str(self.get_pay()) + "."
+                return self.name + " works on a " + self.salary_type + " salary of " + str(self.salary) + " and receives a commission for " + str(self.contract_number) + " contract(s) at " + str(self.commission) + "/contract" + ". "  + "Their total pay is " + str(self.get_pay()) + "."
         elif self.salary_type == "hourly":
             if self.commission_type == "no":
                 return self.name + " works on a contract of " + str(self.working_time) + " hours at " + str(self.salary) + "/hour. " + "Their total pay is " + str(self.get_pay()) + "."
             elif self.commission_type == "fixed":
-                return self.name + " works on a contract of " + str(self.working_time) + " hours at " + str(self.salary) + "/hour" + " and recieves a bonus commission of " + str(self.commission) + ". "  + "Their total pay is " + str(self.get_pay()) + "."
+                return self.name + " works on a contract of " + str(self.working_time) + " hours at " + str(self.salary) + "/hour" + " and receives a bonus commission of " + str(self.commission) + ". "  + "Their total pay is " + str(self.get_pay()) + "."
             elif self.commission_type == 'flexible':
-                return self.name + " works on a contract of " + str(self.working_time) + " hours at " + str(self.salary) + "/hour" + " and recieves a commission for " + str(self.contract_number) + " contract(s) at " + str(self.commission) + "/contract" + ". "  + "Their total pay is " + str(self.get_pay()) + "."
+                return self.name + " works on a contract of " + str(self.working_time) + " hours at " + str(self.salary) + "/hour" + " and receives a commission for " + str(self.contract_number) + " contract(s) at " + str(self.commission) + "/contract" + ". "  + "Their total pay is " + str(self.get_pay()) + "."
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
